@@ -14,8 +14,6 @@ import tflearn
 import tensorflow
 import random
 import json
-import pickle
-
 # end imports
 
 # BOT SETUP
@@ -88,7 +86,7 @@ net = tflearn.regression(net)
 
 model = tflearn.DNN(net)
 
-model.fit(training, output, n_epoch=1000, batch_size=8, show_metric=True)
+model.fit(training, output, n_epoch=5500, batch_size=128, show_metric=True)
 model.save("model.tflearn")
 
 def bag_of_words(s, words):

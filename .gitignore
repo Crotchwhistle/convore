@@ -171,3 +171,8 @@ poetry.toml
 .ruff_cache/
 
 # End of https://www.toptal.com/developers/gitignore/api/python
+
+# TFLEARN
+model.tflearn.data-00000-of-00001
+model.tflearn.index
+model.tflearn.meta
